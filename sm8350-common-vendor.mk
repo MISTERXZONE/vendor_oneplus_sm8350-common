@@ -7,6 +7,28 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+	vendor/oneplus/sm8350-common/proprietary/odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service \
+	vendor/oneplus/sm8350-common/proprietary/odm/etc/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects.xml \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
+	vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
+	vendor/oneplus/sm8350-common/proprietary/odm/lib/libdapparamstorage_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/libdapparamstorage_v3_6.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/libdeccfg_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/libdeccfg_v3_6.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/libdlbdsservice_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/libdlbdsservice_v3_6.so \
+	vendor/oneplus/sm8350-common/proprietary/odm/lib/libqtigef.so:$(TARGET_COPY_OUT_ODM)/lib/libqtigef.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/libstagefright_soft_ddpdec.so:$(TARGET_COPY_OUT_ODM)/lib/libstagefright_soft_ddpdec.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/libstagefrightdolby.so:$(TARGET_COPY_OUT_ODM)/lib/libstagefrightdolby.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/soundfx/libhwdap_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/soundfx/libhwdap_v3_6.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/soundfx/libswdap_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib/soundfx/libswdap_v3_6.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so:$(TARGET_COPY_OUT_ODM)/lib/vendor.dolby_v3_6.hardware.dms360@2.0.so \
+	vendor/oneplus/sm8350-common/proprietary/odm/lib64/libdapparamstorage_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/libdapparamstorage_v3_6.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib64/libdeccfg_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/libdeccfg_v3_6.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib64/libdlbdsservice_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/libdlbdsservice_v3_6.so \
+	vendor/oneplus/sm8350-common/proprietary/odm/lib64/libqtigef.so:$(TARGET_COPY_OUT_ODM)/lib64/libqtigef.so \
+	vendor/oneplus/sm8350-common/proprietary/odm/lib64/soundfx/libhwdap_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/soundfx/libhwdap_v3_6.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib64/soundfx/libswdap_v3_6.so:$(TARGET_COPY_OUT_ODM)/lib64/soundfx/libswdap_v3_6.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so \
+    vendor/oneplus/sm8350-common/proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/sap.conf:$(TARGET_COPY_OUT_ODM)/etc/sap.conf \
     vendor/oneplus/sm8350-common/proprietary/odm/firmware/100ms_RTP.bin:$(TARGET_COPY_OUT_ODM)/firmware/100ms_RTP.bin \
@@ -1303,6 +1325,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+	manifest_dax_dolby_v3_6 \
     adpl \
     adsprpcd \
     cdsprpcd \
