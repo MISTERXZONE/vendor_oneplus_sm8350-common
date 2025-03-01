@@ -6,7 +6,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/oneplus/sm8350-common
 
 PRODUCT_COPY_FILES += \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/audio_effects.xml:$(TARGET_COPY_OUT_ODM)/etc/audio_effects.xml \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc \
+    vendor/oneplus/sm8350-common/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/hw/init.oplus.display.rc:$(TARGET_COPY_OUT_ODM)/etc/init/hw/init.oplus.display.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/init/init.oplus.sensor.rc:$(TARGET_COPY_OUT_ODM)/etc/init/init.oplus.sensor.rc \
     vendor/oneplus/sm8350-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
@@ -847,6 +852,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.1 \
     libbluetooth_audio_extend_factory_client \
     libc++_shared \
+    libdapparamstorage_v3_6 \
+    libdeccfg_v3_6 \
+    libdlbdsservice_v3_6 \
+    vendor.dolby_v3_6.hardware.dms360@2.0 \
     vendor.oplus.hardware.bluetooth_audio_extend@2.1 \
     libaiboost_qnn_sr \
     libaiboost_sr \
@@ -854,16 +863,33 @@ PRODUCT_PACKAGES += \
     liboplusvppfilter \
     libosie_process \
     libosie_stub \
+    libstagefright_soft_ddpdec \
+    libhwdap_v3_6 \
+    libswdap_v3_6 \
     lib-virtual-modem-protos \
+    libcodec2_hidl@1.0_sp \
+    libcodec2_hidl_plugin_sp \
+    libcodec2_soft_ac4dec_sp \
+    libcodec2_soft_common_sp \
+    libcodec2_soft_ddpdec_sp \
+    libcodec2_store_dolby_sp \
+    libcodec2_vndk_sp \
     libcommcenterfw \
     libcommcenterutils \
+    libdapparamstorage_sp \
+    libdeccfg_sp \
+    libdlbdsservice_sp \
     libdmtp-protos-lite \
     libdmtpclient \
     liboemcrypto \
     liboplus-uah-client \
     liboplus_service \
+    libui_sp \
     libwvhidl \
     libwvdrmengine \
+    vendor.dolby_sp.hardware.dmssp@2.0-impl \
+    vendor.dolby_sp.hardware.dmssp@2.0 \
+    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
     vendor.oplus.hardware.appradio@1.0 \
     vendor.oplus.hardware.communicationcenter_compat@1.0 \
     vendor.oplus.hardware.communicationcenter_compat@1.1 \
@@ -896,6 +922,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss@4.0-service.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_dax_dolby_v3_6.xml \
+    vendor.dolby.hardware.dms.xml \
     adpl \
     adsprpcd \
     cdsprpcd \
@@ -974,6 +1002,9 @@ PRODUCT_PACKAGES += \
     tcmd \
     wfdservice \
     android.hardware.drm@1.3-service.widevine \
+    vendor.dolby_sp.hardware.dmssp@2.0-service \
+    vendor.dolby_sp.media.c2@1.0-service \
+    vendor.dolby_v3_6.hardware.dms360@2.0-service \
     oplus_sensor_fb
 
 PRODUCT_PACKAGES += \
